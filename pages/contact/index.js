@@ -15,16 +15,17 @@ const Contact = () => {
           </h2>
 
           {/* form  */}
-          <form action='' className='flex-1 flex flex-col gap-6 w-full mx-auto'>
+          <form action="https://getform.io/f/lbkmzzpb"
+          method="POST" className='flex-1 flex flex-col gap-6 w-full mx-auto'>
             {/* input group */}
             <div className='flex gap-x-6 w-full'>
-              <input type='text' placeholder='Name' className='input' />
-              <input type='text' placeholder='Email' className='input' />
+              <input type='text' placeholder='Name' className='input' name='Name' required/>
+              <input type='text' placeholder='Email' className='input' name='Email' required />
             </div>
-            <input type='text' placeholder='Subject' className='input' />
-            <textarea placeholder='Message' className='textarea'></textarea>
+            <input type='text' placeholder='Subject' className='input' name='Subject' required/>
+            <textarea placeholder='Message' className='textarea' name='Message' required></textarea>
 
-            <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-500 flex items-center justify-center overflow-hidden hover:border-accent group'>
+            <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all  duration-500 flex items-center justify-center overflow-hidden hover:border-accent group'>
               <span className='group-hover:-translate-y-[120px] group-hover:opacity-0 transition-all duration-700'>
                 Let's talk
               </span>

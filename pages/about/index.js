@@ -107,14 +107,14 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className='hidden xl:flex absolute bottom-0 -left-[170px]'
+        className='hidden xl:flex z-0 absolute bottom-0 -left-[170px]'
       >
         <Avatar />
       </motion.div>
 
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text  */}
-        <div className='flex-1 flex flex-col justify-center'>
+        <div className='flex-1 flex z-[1] flex-col justify-center'>
           <motion.h2
             variants={fadeIn('right', 0.2)}
             initial='hidden'
