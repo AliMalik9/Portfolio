@@ -11,7 +11,7 @@ const Contact = () => {
         <div className='flex flex-col w-full max-w-[700px]'>
           {/* text  */}
           <h2 className='h2 text-center mb-12'>
-            Let's <span className='text-accent'>conntect.</span>
+            Let's <span className='text-accent'>connect.</span>
           </h2>
 
           {/* form  */}
