@@ -1,6 +1,6 @@
 {
     "person": {
-        "role": "Design Engineer"
+        "role": "UI / UX Designer"
     },
     "newsletter": {
         "title": "Subscribe to {firstName}'s Newsletter",
@@ -11,8 +11,8 @@
         "label": "Home",
         "title": "{name}'s Portfolio",
         "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "Design engineer and builder",
-        "subline": "I'm Selene, a design engineer at FLY, where I craft intuitive user experiences. After hours, I build my own projects."
+        "headline": "UI/UX Designer and No-code Developer",
+        "subline": "I'm Ali, a UX / UI Designer at INFOSTSTACK, where I craft intuitive user experiences. Outside of work, I focus on creating personal design projects."
     },
     "about": {
         "label": "About",
@@ -20,31 +20,34 @@
         "description": "Meet {name}, {role} from {location}",
         "intro": {
             "title": "Introduction",
-            "description": "Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology."
+            "description": "Ali is a Lahore-based UI/UX designer with a passion for crafting intuitive and user-friendly experiences. With expertise in transforming complex challenges into simple, elegant solutions, Ali's work spans digital interfaces, interactive experiences, and the seamless integration of design and technology."
         },
         "work": {
             "title": "Work Experience",
             "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Present",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.;Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster."
+                "InfoStack Tech": {
+                    "timeframe": "July 2023 - Present",
+                    "role": "UI / UX Designer",
+                    "achievements": "Applied user-centered design principles to create impactful digital experiences, leveraging expertise in user behavior, front-end technologies, and design tools to lead successful projects. Thrived in fast-paced environments, solving complex challenges with creativity and innovation while collaborating with cross-functional teams to develop and deliver cutting-edge products. Enhanced user engagement and satisfaction through thoughtful design and execution."
                 },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Lead Designer",
-                    "achievements": "Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.;Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue."
+                "My Studio": {
+                    "timeframe": "2021 - Present",
+                    "role": "Freelacer Designer & No-Code Developer",
+                    "achievements": "Designed professional and engaging thumbnails that boosted client engagement and click-through rates, while delivering intuitive UI/UX designs for web and mobile applications to enhance user satisfaction and usability. Developed no-code solutions using tools like Webflow and Bubble, streamlining development for clients. Crafted memorable and impactful logo designs that strengthened brand identity for businesses, and collaborated with diverse clients to deliver a wide range of design projects, meeting tight deadlines with precision."
                 }
             }
         },
         "studies": {
             "title": "Studies",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Studied software engineering."
+                "NCBA&E": {
+                    "description": "Bachelors in Computer Sciences."
                 },
-                "Build the Future": {
-                    "description": "Studied online marketing and personal branding."
+                "Punjab College": {
+                    "description": "Intermediate in Computer Sciences."
+                },
+                "Excel School&E": {
+                    "description": "Matriculation in Computer Sciences."
                 }
             }
         },
@@ -52,11 +55,30 @@
             "title": "Technical skills",
             "skills": {
                 "Figma": {
-                    "description": "Able to prototype in Figma with Once UI with unnatural speed."
+                    "description": "Proficient in designing intuitive user interfaces, creating design systems, and collaborating seamlessly with Figma"
                 },
-                "Nextjs": {
-                    "description": "Building next gen apps with Next.js + Once UI + Supabase."
+                "Framer": {
+                    "description": "Skilled in building interactive prototypes and responsive designs using Framer"
+                },
+                "Photoshop": {
+                    "description": "Skilled in editing, retouching, and creating visual assets using Photoshop"
+                },
+                "Notion": {
+                    "description": "Efficient in organizing tasks, managing projects, and creating knowledge bases with Notion"
+                },
+                "FigJam": {
+                    "description": "Proficient in brainstorming and collaborating visually with FigJam"
+                },
+                "Figma Slides": {
+                    "description": "Experienced in designing engaging presentations with Figma Slides"
+                },
+                "Illustrator": {
+                    "description": "Expert in creating vector graphics, illustrations, and logo designs with Illustrator"
+                },
+                "ClickUp": {
+                    "description": "Skilled in managing tasks, workflows, and projects efficiently using ClickUp"
                 }
+               
             }
         }
     },

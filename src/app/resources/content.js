@@ -48,7 +48,7 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>UX Designer and No-code Developer</>,
+    headline: <>UI/UX Designer and No-code Developer</>,
     subline: <>I'm Ali, a UX / UI Designer at <InlineCode>INFOSTSTACK</InlineCode>, where I craft intuitive<br/> user experiences. Outside of work, I focus on creating personal design projects.</>
 }
 

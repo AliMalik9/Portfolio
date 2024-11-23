@@ -4,7 +4,7 @@ import * as cookie from 'cookie';
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === 'POST') {
         const { password } = req.body;
-        const correctPassword = 'inprocesss';
+        const correctPassword = 'inprocess';
 
         if (password === correctPassword) {
             res.setHeader(

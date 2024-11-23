@@ -20,7 +20,7 @@ const routes = {
 // Enable password protection on selected routes
 // Set password in pages/api/authenticate.ts
 const protectedRoutes = {
-    '/work/wealthwave-modern-finance-app': true
+    // '/work/wealthwave-modern-finance-app': true
 }
 
 const effects = {
@@ -35,7 +35,7 @@ const effects = {
         size: '24'              // 2 | 4 | 8 | 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56 | 634
     },
     lines: {
-        display: false,
+        display: true,
     },
 }
 
@@ -57,7 +57,7 @@ const display = {
 }
 
 const mailchimp = {
-    action: 'https://url/subscribe/post?parameters',
+    action: 'https://site.us12.list-manage.com/subscribe/post?u=95d8032408a7ce93bf5499e41&amp;id=7019609735&amp;f_id=002aaee1f0',
     effects: {
         mask: 'topRight',           // none | cursor | topLeft | topRight | bottomLeft | bottomRight
         gradient: {
