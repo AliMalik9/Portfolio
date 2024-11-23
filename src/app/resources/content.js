@@ -1,4 +1,5 @@
 import { InlineCode } from "@/once-ui/components";
+import { PiFramerLogo } from "react-icons/pi";
 
 const person = {
     firstName: 'Ali',
@@ -6,7 +7,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'UI / UX Designer',
     avatar:    '/images/avatar.jpg',
     location:  'Asia/Karachi',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English', 'Urdu']  // optional: Leave the array empty if you don't want to display languages
@@ -47,8 +48,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Ali, a design engineer at <InlineCode>INFOSTSTACK</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>UX Designer and No-code Developer</>,
+    subline: <>I'm Ali, a UX / UI Designer at <InlineCode>INFOSTSTACK</InlineCode>, where I craft intuitive<br/> user experiences. Outside of work, I focus on creating personal design projects.</>
 }
 
 const about = {
@@ -64,44 +65,50 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com/EULER'
+        link: 'https://cal.com/euler'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Ali is a Lahore-based UI/UX designer with a passion for crafting intuitive and user-friendly experiences. With expertise in transforming complex challenges into simple, elegant solutions, Ali's work spans digital interfaces, interactive experiences, and the seamless integration of design and technology.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'InfoStack Tech',
+                timeframe: 'July 2023 - Present',
+                role: 'UI / UX Designer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Applied user-centered design principles to create impactful digital experiences.</>,
+                    <>Leveraged expertise in user behavior, front-end technologies, and design tools to lead successful projects.</>,
+                    <>Thrived in fast-paced environments, solving complex challenges with creativity and innovation.</>,
+                    <>Collaborated with cross-functional teams to develop and deliver cutting-edge products.</>,
+                    <>Enhanced user engagement and satisfaction through thoughtful design and execution.</>,
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
+                    // {
+                    //     src: '/images/projects/project-01/cover-01.jpg',
+                    //     alt: 'Once UI Project',
+                    //     width: 16,
+                    //     height: 9
+                    // }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'My Studio',
+                timeframe: '2021 - Present',
+                role: 'Freelacer Designer & No-Code Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Designed professional and engaging thumbnails that boosted client engagement and click-through rates.</>,
+                    <>Delivered intuitive UI/UX designs for web and mobile applications, enhancing user satisfaction and usability.</>,
+                    <>Developed no-code solutions using tools like Webflow and Bubble, streamlining development for clients.</>,
+                    <>Crafted memorable and impactful logo designs that strengthened brand identity for businesses.</>,
+                    <>Collaborated with diverse clients to deliver a wide range of design projects, meeting tight deadlines with precision.</>
                 ],
                 images: [ ]
-            }
+            },
         ]
     },
     studies: {
@@ -109,12 +116,16 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'NCBA&E',
+                description: <>Bachelors in Computer Sciences.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Punjab College',
+                description: <>Intermediate in Computer Sciences.</>,
+            },
+            {
+                name: 'Excel School',
+                description: <>Matriculation in Computer Sciences.</>,
             }
         ]
     },
@@ -124,34 +135,44 @@ const about = {
         skills: [
             {
                 title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                description: <>Proficient in designing intuitive user interfaces, creating design systems, and collaborating seamlessly with Figma</>, 
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            }
+                title: 'Framer',
+                description: <>Skilled in building interactive prototypes and responsive designs using Framer</>, 
+                images: []
+            },
+            {
+                title: 'Photoshop',
+                description: <>Skilled in editing, retouching, and creating visual assets using Photoshop</>, 
+                images: []
+            },
+            {
+                title: 'Notion',
+                description: <>Efficient in organizing tasks, managing projects, and creating knowledge bases with Notion</>, 
+                images: []
+            },
+            {
+                title: 'FigJam',
+                description: <>Proficient in brainstorming and collaborating visually with FigJam</>, 
+                images: []
+            },
+            {
+                title: 'Figma Slides',
+                description: <>Experienced in designing engaging presentations with Figma Slides</>, 
+                images: []
+            },
+            {
+                title: 'Illustrator',
+                description: <>Expert in creating vector graphics, illustrations, and logo designs with Illustrator</>, 
+                images: []
+            },
+            {
+                title: 'ClickUp',
+                description: <>Skilled in managing tasks, workflows, and projects efficiently using ClickUp</>, 
+                images: []
+            }            
         ]
     }
 }
