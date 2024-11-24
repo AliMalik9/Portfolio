@@ -1,10 +1,12 @@
 "use client";
 
 import Masonry from 'react-masonry-css';
-import { SmartImage } from "@/once-ui/components";
 import styles from "./Gallery.module.scss";
-import { useTranslations } from 'next-intl';
-import { renderContent } from '@/app/resources';
+
+const images = Array.from({ length: 30 }, (_, index) => ({
+    src: `/images/gallery/img-${String(index + 1).padStart(2, "0")}.jpg`, // Generate file names like img-01.jpg
+    alt: `Gallery Image ${index + 1}`,
+}));
 
 export default function MasonryGrid() {
     const breakpointColumnsObj = {
@@ -14,22 +16,17 @@ export default function MasonryGrid() {
         560: 1
     };
 
-    const t = useTranslations();
-    const { gallery } = renderContent(t);
-
     return (
         <Masonry
             breakpointCols={breakpointColumnsObj}
             className={styles.masonryGrid}
             columnClassName={styles.masonryGridColumn}>
-            {gallery.images.map((image, index) => (
-                <SmartImage
+            {images.map((image, index) => (
+                <img
                     key={index}
-                    radius="m"
-                    aspectRatio={image.orientation === "horizontal" ? "16 / 9" : "9 / 16"}
                     src={image.src}
                     alt={image.alt}
-                    className={styles.gridItem}
+                    className={styles.image}
                 />
             ))}
         </Masonry>

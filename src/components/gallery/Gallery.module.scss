@@ -11,4 +11,14 @@
 
 .gridItem {
     margin-bottom: var(--static-space-16);
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%; /* Ensure images scale properly within the column */
+    height: auto; /* Maintain the natural aspect ratio */
+    object-fit: scale-down; /* Or use "cover" if you want cropping */
+    border-radius: 16px;
+    margin-bottom: 16px;
 }
