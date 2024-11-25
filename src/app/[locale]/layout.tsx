@@ -1,6 +1,8 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
+import Head from 'next/head';
+
 import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
@@ -109,6 +111,13 @@ export default async function RootLayout({
           code.variable
         )}
       >
+		 <Head>
+          {/* Google Search Console Meta Tag */}
+          <meta
+            name="google-site-verification"
+            content="P5OIw6Am9gkEvn9qRV3bAVmJdDX-dPqnlejJnApu9YU"
+          />
+        </Head>
         <Flex
           style={{ minHeight: "100vh" }}
           as="body"
