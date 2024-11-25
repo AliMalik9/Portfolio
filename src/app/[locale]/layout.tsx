@@ -118,7 +118,7 @@ export default async function RootLayout({
           direction="column"
         >
           {/* Add GoogleAnalytics */}
-          <GoogleAnalytics gaId="G-XYZ" />
+          <GoogleAnalytics gaId="G-QRLFKVBBC0" />
           <Background
             mask={effects.mask as any}
             gradient={effects.gradient as any}
