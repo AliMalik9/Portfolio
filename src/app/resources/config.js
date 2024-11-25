@@ -1,4 +1,4 @@
-const baseURL = 'demo.magic-portfolio.com'
+const baseURL = 'thealimalik.site'
 
 // Enable localization
 const i18n = false;

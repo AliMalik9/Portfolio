@@ -16,6 +16,9 @@ import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
 import { Background, Flex } from "@/once-ui/components";
 
+import Clarity from '@microsoft/clarity';
+
+
 export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
 ) {
@@ -89,6 +92,12 @@ export default async function RootLayout({
 } : RootLayoutProps) {
 	unstable_setRequestLocale(locale);
 	const messages = await getMessages();
+
+	// Make sure to add your actual project id instead of "yourProjectId".
+const projectId = "p43rqacllb"
+
+Clarity.init(projectId);
+
 	return (
 		<NextIntlClientProvider messages={messages}>
 			<Flex
