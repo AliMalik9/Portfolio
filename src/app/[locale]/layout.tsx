@@ -1,8 +1,6 @@
 import "@/once-ui/styles/index.scss";
 import "@/once-ui/tokens/index.scss";
 
-import Head from 'next/head';
-
 import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
@@ -19,7 +17,7 @@ import { Background, Flex } from "@/once-ui/components";
 
 import Script from "next/script";
 import Clarity from "@microsoft/clarity";
-import { GoogleAnalytics } from "@next/third-parties/google"; // Import GoogleAnalytics
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
   const t = await getTranslations();
@@ -47,6 +45,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         "max-image-preview": "large",
         "max-snippet": -1,
       },
+    },
+    verification: {
+      google: "P5OIw6Am9gkEvn9qRV3bAVmJdDX-dPqnlejJnApu9YU", // Google Search Console verification
     },
   };
 }
@@ -111,13 +112,6 @@ export default async function RootLayout({
           code.variable
         )}
       >
-		 <Head>
-          {/* Google Search Console Meta Tag */}
-          <meta
-            name="google-site-verification"
-            content="P5OIw6Am9gkEvn9qRV3bAVmJdDX-dPqnlejJnApu9YU"
-          />
-        </Head>
         <Flex
           style={{ minHeight: "100vh" }}
           as="body"
@@ -128,6 +122,22 @@ export default async function RootLayout({
         >
           {/* Add GoogleAnalytics */}
           <GoogleAnalytics gaId="G-QRLFKVBBC0" />
+          
+          {/* Add Clarity Script */}
+          <Script
+            id="clarity-script"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                (function(c,l,a,r,i,t,y){
+                  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+                })(window, document, "clarity", "script", "${projectId}");
+              `,
+            }}
+          />
+
           <Background
             mask={effects.mask as any}
             gradient={effects.gradient as any}
