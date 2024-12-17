@@ -17,7 +17,9 @@ import {
 	HiCheckCircle,
 	HiMiniGlobeAsiaAustralia,
 	HiEnvelope,
-	HiCalendarDays
+	HiCalendarDays,
+	HiSun,
+	HiMoon
 } from "react-icons/hi2";
 
 import {
@@ -66,4 +68,6 @@ export const iconLibrary: Record<string, IconType> = {
 	behance: FaBehance,
 	figma: FaFigma,
 	x: FaXTwitter,
+	sun: HiSun,
+	moon: HiMoon
 };
