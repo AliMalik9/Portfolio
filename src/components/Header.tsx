@@ -7,7 +7,6 @@ import { Flex, ToggleButton } from "@/once-ui/components"
 import styles from '@/components/Header.module.scss'
 
 import { routes, display } from '@/app/resources'
-import Cookies from 'js-cookie';
 
 import { routing } from '@/i18n/routing';
 import { Locale, usePathname, useRouter } from '@/i18n/routing';
@@ -50,30 +49,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = 'en-GB' })
     );
 };
 
-const SetTheme = () => {
-    const [theme, setTheme] = useState<'light' | 'dark'>('light');
-
-    useEffect(() => {
-        const storedTheme = Cookies.get('data-theme') as 'light' | 'dark' | undefined;
-        if (storedTheme) {
-            setTheme(storedTheme);
-            document.documentElement.setAttribute('data-theme', storedTheme);
-        }
-    }, []);
-
-    const handleThemeToggle = () => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
-        Cookies.set('data-theme', newTheme, { expires: 365 });
-    };
-
-    return (
-        <button onClick={handleThemeToggle}>
-            Switch to {theme === 'light' ? 'Dark' : 'Light'} Theme
-        </button>
-    );
-};
+export default TimeDisplay;
 
 export const Header = () => {
     const router = useRouter();
@@ -165,11 +141,6 @@ export const Header = () => {
                                     <Flex paddingX="2" hide="s">{gallery.label}</Flex>
                                 </ToggleButton>
                             )}
-                            <ToggleButton
-                                    prefixIcon="gallery"
-                                    selected={pathname.startsWith('/gallery')}>
-                                    <Flex paddingX="2" hide="s">{gallery.label}</Flex>
-                                </ToggleButton>
                         </Flex>
                     </Flex>
                 </Flex>
@@ -201,12 +172,9 @@ export const Header = () => {
                                 <TimeDisplay timeZone={person.location}/>
                             )}
                         </Flex>
-                        <SetTheme />
                     </Flex>
                 </Flex>
             </Flex>
         </>
     )
 }
-
-export default Header;
