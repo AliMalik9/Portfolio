@@ -1,4 +1,4 @@
-const baseURL = 'thealimalik.site'
+const baseURL = 'https://thealimalik.site'
 
 // Enable localization
 const i18n = false;

@@ -1,31 +1,47 @@
-import { getPosts } from '@/app/utils/utils'
-import { baseURL } from '@/app/resources'
-import { routing } from '@/i18n/routing'
+import { getPosts } from '@/app/utils/utils';
+import { baseURL } from '@/app/resources';
+import { routing } from '@/i18n/routing';
 
 export default async function sitemap() {
+    const locales = routing.locales; // e.g., ['en', 'es', 'fr']
 
-    const locales = routing.locales;
+    // Ensure baseURL is absolute
+    const absoluteBaseURL = baseURL.startsWith('http') ? baseURL : `https://${baseURL}`;
 
-    let blogs = locales.flatMap((locale) => 
-        getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]).map((post) => ({
-            url: `${baseURL}/${locale}/blog/${post.slug}`,
-            lastModified: post.metadata.publishedAt,
-        }))
-    );
+    // Generate blog posts URLs
+    let blogs = locales.flatMap((locale) => {
+        try {
+            return getPosts(['src', 'app', locale, 'blog', 'posts']).map((post) => ({
+                url: `${absoluteBaseURL}/${locale}/blog/${post.slug}`,
+                lastModified: post.metadata.publishedAt || new Date().toISOString().split('T')[0],
+            }));
+        } catch (error) {
+            console.error(`Error fetching blog posts for locale '${locale}':`, error);
+            return [];
+        }
+    });
 
-    let works = locales.flatMap((locale) => 
-        getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]).map((post) => ({
-            url: `${baseURL}/${locale}/work/${post.slug}`,
-            lastModified: post.metadata.publishedAt,
-        }))
-    );
+    // Generate work/project URLs
+    let works = locales.flatMap((locale) => {
+        try {
+            return getPosts(['src', 'app', locale, 'work', 'projects']).map((post) => ({
+                url: `${absoluteBaseURL}/${locale}/work/${post.slug}`,
+                lastModified: post.metadata.publishedAt || new Date().toISOString().split('T')[0],
+            }));
+        } catch (error) {
+            console.error(`Error fetching work projects for locale '${locale}':`, error);
+            return [];
+        }
+    });
 
-    let routes = locales.flatMap((locale)=> 
+    // Static routes (e.g., home, blog, work)
+    let routes = locales.flatMap((locale) =>
         ['', '/blog', '/work'].map((route) => ({
-            url: `${baseURL}/${locale}${route}`,
+            url: `${absoluteBaseURL}/${locale}${route}`,
             lastModified: new Date().toISOString().split('T')[0],
         }))
     );
 
-    return [...routes, ...blogs, ...works]
+    // Combine and return the full sitemap
+    return [...routes, ...blogs, ...works];
 }
