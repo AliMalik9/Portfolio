@@ -134,45 +134,46 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Proficient in designing intuitive user interfaces, creating design systems, and collaborating seamlessly with Figma</>, 
-                images: []
-            },
-            {
-                title: 'Framer',
-                description: <>Skilled in building interactive prototypes and responsive designs using Framer</>, 
-                images: []
-            },
-            {
-                title: 'Photoshop',
-                description: <>Skilled in editing, retouching, and creating visual assets using Photoshop</>, 
-                images: []
-            },
-            {
-                title: 'Notion',
-                description: <>Efficient in organizing tasks, managing projects, and creating knowledge bases with Notion</>, 
-                images: []
-            },
-            {
-                title: 'FigJam',
-                description: <>Proficient in brainstorming and collaborating visually with FigJam</>, 
-                images: []
-            },
-            {
-                title: 'Figma Slides',
-                description: <>Experienced in designing engaging presentations with Figma Slides</>, 
-                images: []
-            },
-            {
-                title: 'Illustrator',
-                description: <>Expert in creating vector graphics, illustrations, and logo designs with Illustrator</>, 
-                images: []
-            },
-            {
-                title: 'ClickUp',
-                description: <>Skilled in managing tasks, workflows, and projects efficiently using ClickUp</>, 
-                images: []
-            }            
+    title: 'User Interface Design',
+    description: <>Proficient in creating intuitive, user-friendly, and visually appealing interfaces for web and mobile applications</>, 
+    images: []
+},
+{
+    title: 'Design Systems',
+    description: <>Experienced in building scalable and consistent design systems that enhance collaboration and efficiency</>, 
+    images: []
+},
+{
+    title: 'Prototyping',
+    description: <>Skilled in developing interactive prototypes to test and validate design ideas effectively</>, 
+    images: []
+},
+{
+    title: 'Visual Design',
+    description: <>Expert in crafting compelling visual assets, layouts, and typography for impactful designs</>, 
+    images: []
+},
+{
+    title: 'Wireframing',
+    description: <>Efficient in creating wireframes that outline the structure and functionality of user interfaces</>, 
+    images: []
+},
+{
+    title: 'User Research',
+    description: <>Proficient in conducting user research to gather insights and inform user-centered design decisions</>, 
+    images: []
+},
+{
+    title: 'Responsive Design',
+    description: <>Experienced in designing layouts that adapt seamlessly to various screen sizes and devices</>, 
+    images: []
+},
+{
+    title: 'Collaboration',
+    description: <>Skilled in collaborating with cross-functional teams, including developers, stakeholders, and researchers</>, 
+    images: []
+}
+
         ]
     }
 }

@@ -1,103 +1,102 @@
 {
-    "person": {
-        "role": "UI / UX Designer"
-    },
-    "newsletter": {
-        "title": "Subscribe to {firstName}'s Newsletter",
-        "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
-        "button": "Sign up"
-    },
-    "home": {
-        "label": "Home",
-        "title": "{name}'s Portfolio",
-        "description": "Portfolio website showcasing my work as a {role}",
-        "headline": "UI/UX Designer and No-code Developer",
-        "subline": "I'm Ali, a UX / UI Designer at INFOSTSTACK, where I craft intuitive user experiences. Outside of work, I focus on creating personal design projects."
-    },
-    "about": {
-        "label": "About",
-        "title": "About me",
-        "description": "Meet {name}, {role} from {location}",
-        "intro": {
-            "title": "Introduction",
-            "description": "Ali is a Lahore-based UI/UX designer with a passion for crafting intuitive and user-friendly experiences. With expertise in transforming complex challenges into simple, elegant solutions, Ali's work spans digital interfaces, interactive experiences, and the seamless integration of design and technology."
-        },
-        "work": {
-            "title": "Work Experience",
-            "experiences": {
-                "InfoStack Tech": {
-                    "timeframe": "July 2023 - Present",
-                    "role": "UI / UX Designer",
-                    "achievements": "Applied user-centered design principles to create impactful digital experiences, leveraging expertise in user behavior, front-end technologies, and design tools to lead successful projects. Thrived in fast-paced environments, solving complex challenges with creativity and innovation while collaborating with cross-functional teams to develop and deliver cutting-edge products. Enhanced user engagement and satisfaction through thoughtful design and execution."
-                },
-                "My Studio": {
-                    "timeframe": "2021 - Present",
-                    "role": "Freelacer Designer & No-Code Developer",
-                    "achievements": "Designed professional and engaging thumbnails that boosted client engagement and click-through rates, while delivering intuitive UI/UX designs for web and mobile applications to enhance user satisfaction and usability. Developed no-code solutions using tools like Webflow and Bubble, streamlining development for clients. Crafted memorable and impactful logo designs that strengthened brand identity for businesses, and collaborated with diverse clients to deliver a wide range of design projects, meeting tight deadlines with precision."
-                }
-            }
-        },
-        "studies": {
-            "title": "Studies",
-            "institutions": {
-                "NCBA&E": {
-                    "description": "Bachelors in Computer Sciences."
-                },
-                "Punjab College": {
-                    "description": "Intermediate in Computer Sciences."
-                },
-                "Excel School&E": {
-                    "description": "Matriculation in Computer Sciences."
-                }
-            }
-        },
-        "technical": {
-            "title": "Technical skills",
-            "skills": {
-                "Figma": {
-                    "description": "Proficient in designing intuitive user interfaces, creating design systems, and collaborating seamlessly with Figma"
-                },
-                "Framer": {
-                    "description": "Skilled in building interactive prototypes and responsive designs using Framer"
-                },
-                "Photoshop": {
-                    "description": "Skilled in editing, retouching, and creating visual assets using Photoshop"
-                },
-                "Notion": {
-                    "description": "Efficient in organizing tasks, managing projects, and creating knowledge bases with Notion"
-                },
-                "FigJam": {
-                    "description": "Proficient in brainstorming and collaborating visually with FigJam"
-                },
-                "Figma Slides": {
-                    "description": "Experienced in designing engaging presentations with Figma Slides"
-                },
-                "Illustrator": {
-                    "description": "Expert in creating vector graphics, illustrations, and logo designs with Illustrator"
-                },
-                "ClickUp": {
-                    "description": "Skilled in managing tasks, workflows, and projects efficiently using ClickUp"
-                }
-               
-            }
-        }
-    },
-    "blog": {
-        "label": "Blog",
-        "title": "Writing about design and tech...",
-        "description": "Read what {name} has been up to recently"
+  "person": {
+    "role": "UI / UX Designer"
+  },
+  "newsletter": {
+    "title": "Subscribe to {firstName}'s Newsletter",
+    "description": "I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering",
+    "button": "Sign up"
+  },
+  "home": {
+    "label": "Home",
+    "title": "{name}'s Portfolio",
+    "description": "Portfolio website showcasing my work as a {role}",
+    "headline": "UI/UX Designer and No-code Developer",
+    "subline": "I'm Ali, a UX / UI Designer at INFOSTSTACK, where I craft intuitive user experiences. Outside of work, I focus on creating personal design projects."
+  },
+  "about": {
+    "label": "About",
+    "title": "About me",
+    "description": "Meet {name}, {role} from {location}",
+    "intro": {
+      "title": "Introduction",
+      "description": "Ali is a Lahore-based UI/UX designer with a passion for crafting intuitive and user-friendly experiences. With expertise in transforming complex challenges into simple, elegant solutions, Ali's work spans digital interfaces, interactive experiences, and the seamless integration of design and technology."
     },
     "work": {
-        "label": "Work",
-        "title": "My projects",
-        "description": "Design and dev projects by {name}"
+      "title": "Work Experience",
+      "experiences": {
+        "InfoStack Tech": {
+          "timeframe": "July 2023 - Present",
+          "role": "UI / UX Designer",
+          "achievements": "Applied user-centered design principles to create impactful digital experiences, leveraging expertise in user behavior, front-end technologies, and design tools to lead successful projects. Thrived in fast-paced environments, solving complex challenges with creativity and innovation while collaborating with cross-functional teams to develop and deliver cutting-edge products. Enhanced user engagement and satisfaction through thoughtful design and execution."
+        },
+        "My Studio": {
+          "timeframe": "2021 - Present",
+          "role": "Freelacer Designer & No-Code Developer",
+          "achievements": "Designed professional and engaging thumbnails that boosted client engagement and click-through rates, while delivering intuitive UI/UX designs for web and mobile applications to enhance user satisfaction and usability. Developed no-code solutions using tools like Webflow and Bubble, streamlining development for clients. Crafted memorable and impactful logo designs that strengthened brand identity for businesses, and collaborated with diverse clients to deliver a wide range of design projects, meeting tight deadlines with precision."
+        }
+      }
     },
-    "gallery": {
-        "label": "Gallery",
-        "title": "My photo gallery",
-        "description": "A photo collection by {name}"
+    "studies": {
+      "title": "Studies",
+      "institutions": {
+        "NCBA&E": {
+          "description": "Bachelors in Computer Sciences."
+        },
+        "Punjab College": {
+          "description": "Intermediate in Computer Sciences."
+        },
+        "Excel School&E": {
+          "description": "Matriculation in Computer Sciences."
+        }
+      }
     },
-    "projectCard": {
-        "label": "Read Case Study"
+    "technical": {
+      "title": "Technical skills",
+      "skills": {
+        "User Interface Design": {
+          "description": "Proficient in creating intuitive, user-friendly, and visually appealing interfaces for web and mobile applications"
+        },
+        "Design Systems": {
+          "description": "Experienced in building scalable and consistent design systems that enhance collaboration and efficiency"
+        },
+        "Prototyping": {
+          "description": "Skilled in developing interactive prototypes to test and validate design ideas effectively"
+        },
+        "Visual Design": {
+          "description": "Expert in crafting compelling visual assets, layouts, and typography for impactful designs"
+        },
+        "Wireframing": {
+          "description": "Efficient in creating wireframes that outline the structure and functionality of user interfaces"
+        },
+        "User Research": {
+          "description": "Proficient in conducting user research to gather insights and inform user-centered design decisions"
+        },
+        "Responsive Design": {
+          "description": "Experienced in designing layouts that adapt seamlessly to various screen sizes and devices"
+        },
+        "Collaboration": {
+          "description": "Skilled in collaborating with cross-functional teams, including developers, stakeholders, and researchers"
+        }
+      }
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Writing about design and tech...",
+    "description": "Read what {name} has been up to recently"
+  },
+  "work": {
+    "label": "Work",
+    "title": "My projects",
+    "description": "Design and dev projects by {name}"
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "My photo gallery",
+    "description": "A photo collection by {name}"
+  },
+  "projectCard": {
+    "label": "Read Case Study"
+  }
 }
