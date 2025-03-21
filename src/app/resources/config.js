@@ -39,17 +39,29 @@ const effects = {
     },
 }
 
+// const style = {
+//     theme:       'dark',         // dark | light
+//     neutral:     'sand',         // sand | gray | slate
+//     brand:       'orange',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+//     accent:      'yellow',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+//     solid:       'contrast',     // color | contrast
+//     solidStyle:  'flat',         // flat | plastic
+//     border:      'playful',      // rounded | playful | conservative
+//     surface:     'translucent',  // filled | translucent
+//     transition:  'all'           // all | micro | macro
+// }
+
 const style = {
-    theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
-    brand:       'green',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'aqua',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'contrast',     // color | contrast
-    solidStyle:  'flat',         // flat | plastic
-    border:      'playful',      // rounded | playful | conservative
-    surface:     'translucent',  // filled | translucent
-    transition:  'all'           // all | micro | macro
-}
+    theme: "dark",
+    brand: "cyan",
+    accent: "cyan",
+    neutral: "custom",
+    border: "playful",
+    solid: "color",
+    solidStyle: "flat",
+    surface: "translucent",
+    transition: "all",
+  }
 
 const display = {
     location: true,
